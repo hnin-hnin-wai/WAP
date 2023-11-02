@@ -1,0 +1,55 @@
+
+#bd{
+    margin:auto;
+    padding: 0.5px;
+    width: 900px;
+    height: 930px;
+    border: 2px solid blue;
+
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    /* background-color: slategray; */
+}
+
+p{
+    font-size: 24px;
+    color: darkblue;
+    
+}
+
+hr{
+    
+    border-color: blue;
+}
+.logOut{
+    right: 20px;
+}
+
+h3{
+    margin-left: 30px;
+}
+
+table,th,td{
+    border: 2px solid rgb(86, 112, 227);  
+    border-collapse: collapse;  
+    width: 800px;   
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+
+}
+
+.total{
+    text-align: right;
+}
+
+#btn{
+    position: absolute;
+    right: 350px;
+}
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title >
+      Home
+    </title>
+    <link href="./main.css" type="text/css" rel="stylesheet" />
+</head>
+<body id="bd">
+  <div id="header">
+    <img class="productLogo" src="./images/product1.png" alt="product" width="100">
+    <p> Welcome, customers!</p>
+    <img class="logOut" src="./images/logOut.png" alt="Log out" width="30">
+  </div>
+  <hr>
+  <div>
+    <h3>Product List</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      
+      <tr>
+        <td>Node.js</td>
+        <td>9.99</td>
+        <td>8</td>
+        <td><img src="./images/cart1.png" width="40"></td>
+      </tr>
+      
+      <tr>
+        <td>React</td>
+        <td>19.99</td>
+        <td>5</td>
+        <td><img src="./images/cart1.png" width="40"></td>
+      </tr>
+
+      <tr>
+        <td>Angular</td>
+        <td>29.99</td>
+        <td>13</td>
+        <td><img src="./images/cart1.png" width="40"></td>
+      </tr>
+
+    </table>
+  </div>
+  
+  <div>
+    <h3>Your Shopping Cart</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      
+      <tr>
+        <td>Node.js</td>
+        <td>9.99</td>
+        <td>9.99</td>
+        <td colspan="3">
+              <button type="button">+</button>
+              <input type="number" id="qty" name="quantity">
+              <button type="button">-</button>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Angular</td>
+        <td>29.99</td>
+        <td>290.99</td>
+        <td colspan="3">
+              <button type="button">+</button>
+              <input type="number" id="qty" name="quantity">
+              <button type="button">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" id="total">
+          Total: 300.98
+        </td>
+        
+      </tr>
+    </table>   
+  </div>
+  <button type="button" id="btn">Place Order</button>
+</body>
+</html>
