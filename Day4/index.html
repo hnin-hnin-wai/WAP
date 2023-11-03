@@ -27,7 +27,7 @@
 
             <!-- CONTAINER -->
             <form
-                action="#">
+                action="">
                 <!-- INFORMATION AREA -->
                 <div
                     class="main-container">
@@ -35,7 +35,7 @@
                     <div
                         class="sub-container" id="left-side">
                         <!--  fName -->
-                        <div class="components">
+                        <div>
                             <label for="firstName" class="lbl">First Name
                                 <span class="reqStar">*</span>
                             </label>
@@ -43,7 +43,7 @@
                         </div>
 
                         <!--  lName -->
-                        <div class="components">
+                        <div>
                             <label for="lastName" class="lbl">Last Name
                                 <span class="reqStar">*</span>
                             </label>
@@ -72,8 +72,8 @@
 
                         <!--  State/Province/Region -->
                         <div>
-                            <label for="state"  class="lbl">State/province/Region</label>
-                            <select name="selectState" class="inp" id="state">
+                            <label for="state" class="lbl">State/province/Region</label>
+                            <select name="selectState" class="inp">
                                 <option selected>-Select-</option>
                                 <option>CA</option>
                                 <option>IA</option>
@@ -83,7 +83,7 @@
                         <!--  Country -->
                         <div>
                             <label for="country" class="lbl">Country</label>
-                            <select name="selectCountry" class="inp" id="country">
+                            <select name="selectCountry" class="inp">
                                 <option selected>-Select-</option>
                                 <option>US</option>
                                 <option>China</option>
@@ -95,7 +95,7 @@
                         <div>
                             <label for="email" class="lbl">Email<span class="reqStar">*</span>
                             </label>
-                            <input type="text" id="email" name="email" class="inp" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/">
+                            <input type="text" id="email" name="email" class="inp">
                         </div>
 
                         <!--  Phone No. req -->
@@ -113,8 +113,8 @@
 
                         <!-- Meal Preference -->
                         <div>
-                            <label for="meal" class="lbl">Meal Preference</label>
-                            <select name="selectMeal" class="inp" id="meal">
+                            <label class="lbl">Meal Preference</label>
+                            <select name="selectMeal" class="inp">
                                 <option selected>-Select-</option>
                                 <option>Vegetarian</option>
                                 <option>option1</option>
@@ -128,7 +128,7 @@
 
                         <!-- chk payment -->
                         <div>
-                            <label class="lbl">Payment Mode</label>
+                            <label for="payment" class="lbl">Payment Mode</label>
                             <div class="chkPayment">
                                 <div>
                                     <input type="checkbox" name="cash"/>Cash

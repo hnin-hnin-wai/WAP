@@ -43,7 +43,7 @@ header{
     padding-left: 20px;
 }
 
-#lbl {
+.lbl {
     display: inline-block;
     margin: 10px;
 }
@@ -58,7 +58,7 @@ header{
 
 .inpAddress{
     width: 250px;
-   /*  height: 80; */
+    height: 80;
     display: block;
     float: right;
     margin-top: 5px;
