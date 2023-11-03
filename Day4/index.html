@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <link href="./main.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Workshop Registration</h1>
+            </div>
+            <div>
+                <select name="chooseActions" class="optHeader">
+                    <option selected>More Actions</option>
+                    <option>option1</option>
+                    <option>option2</option>
+                    <option>option3</option>
+                </select>
+            </div>
+        </header>
+        <section>
+            <div class="message">
+                <p class="lblRegister">Register now shile seats are available!</p>
+            </div>
+
+            <!-- CONTAINER -->
+            <form
+                action="">
+                <!-- INFORMATION AREA -->
+                <div
+                    class="main-container">
+                    <!-- Left Side -->
+                    <div
+                        class="sub-container" id="left-side">
+                        <!--  fName -->
+                        <div class="components">
+                            <label for="firstName" class="lbl">First Name
+                                <span class="reqStar">*</span>
+                            </label>
+                            <input type="text" id="fname" name="fname" class="inp" required>
+                        </div>
+
+                        <!--  lName -->
+                        <div class="components">
+                            <label for="lastName" class="lbl">Last Name
+                                <span class="reqStar">*</span>
+                            </label>
+                            <input type="text" id="lname" name="lname" class="inp" required>
+                        </div>
+
+                        <!--  Company name -->
+                        <div>
+                            <label for="Company" class="lbl">Company/Institution<span class="reqStar">*</span>
+                            </label>
+                            <input type="text" id="company" name="company" class="inp" required>
+                        </div>
+
+                        <!--  Address -->
+                        <div>
+                            <label for="Address" class="lbl">Address<span class="reqStar">*</span>
+                            </label>
+                            <textarea name="address" id="address" class="inpAddress"></textarea>
+                        </div>
+
+                        <!-- City -->
+                        <div>
+                            <label for="city" class="lbl">City</label>
+                            <input type="text" id="city" name="city" class="inp">
+                        </div>
+
+                        <!--  State/Province/Region -->
+                        <div>
+                            <label for="state" class="lbl">State/province/Region</label>
+                            <select name="selectState" class="inp">
+                                <option selected>-Select-</option>
+                                <option>CA</option>
+                                <option>IA</option>
+                                <option>NY</option>
+                            </select>
+                        </div>
+                        <!--  Country -->
+                        <div>
+                            <label for="country" class="lbl">Country</label>
+                            <select name="selectCountry" class="inp">
+                                <option selected>-Select-</option>
+                                <option>US</option>
+                                <option>China</option>
+                                <option>India</option>
+                            </select>
+                        </div>
+
+                        <!--  Email req-->
+                        <div>
+                            <label for="email" class="lbl">Email<span class="reqStar">*</span>
+                            </label>
+                            <input type="text" id="email" name="email" class="inp" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/">
+                        </div>
+
+                        <!--  Phone No. req -->
+                        <div>
+                            <label for="phNumber" class="lbl">Phone Number<span class="reqStar">*</span>
+                            </label>
+                            <input type="text" id="phNumber" name="phNumber" class="inp">
+                        </div>                        
+
+                    </div>
+                    <!-- Right Side -->
+                    <div
+                        class="sub-container" id="right-side">
+                        <p class="lblRegister">Lunch</p>
+
+                        <!-- Meal Preference -->
+                        <div>
+                            <label class="lbl">Meal Preference</label>
+                            <select name="selectMeal" class="inp">
+                                <option selected>-Select-</option>
+                                <option>Vegetarian</option>
+                                <option>option1</option>
+                                <option>option2</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <p class="lblRegister">Payment Details</p>
+                        </div>                        
+
+                        <!-- chk payment -->
+                        <div>
+                            <label for="payment" class="lbl">Payment Mode</label>
+                            <div class="chkPayment">
+                                <div>
+                                    <input type="checkbox" name="cash"/>Cash
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="cheque"/>Cheque
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="Demand Draft"/>Demand Draft
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DD/Cheque No.  -->
+                        <div>
+                            <label for="ddCheque" class="lbl">DD/Cheque No.</label>
+                            <input type="text" id="ddCheque" name="ddCheque"class="inp">
+                        </div>
+
+
+                        <!-- Drawn on (Bank Name) -->
+                        <div>
+                            <label for="dBankName" class="lbl">Drawn on(Bank Name)</label>
+                            <input type="text" id="dBankName" name="dBankName" class="inp">
+                        </div>
+
+                        <!-- Payable at -->
+                        <div>
+                            <label for="payable" class="lbl">Payable at</label>
+                            <input type="text" id="payable" name="dBankName" class="inp">
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- BUTTON -->
+                <div class="button-area">
+                    <input class="button" type="submit" value="Submit">
+                    <input class="button" type="reset" value="Reset">
+                </div>
+            </form>
+
+        </section>
+
+    </body>
+</html>

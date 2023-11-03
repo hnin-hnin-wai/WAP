@@ -1,0 +1,122 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    font-size: 14px;
+    display: flex;
+  /*   border: 1px solid green; */
+    background-color: rgb(155, 240, 212);
+    gap: 50px;
+    margin: auto;
+}
+
+.optHeader{
+/*     border: 0px;
+    outline: 0px; */
+    border: none;
+    background-color: rgb(155, 240, 212);
+    margin-top: 30px;
+    /* font-weight: bold; */
+}
+
+.reqStar{
+    color: red;
+}
+
+.main-container {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.sub-container {
+    width: 48%;
+}
+
+#left-side {
+    float: left;
+}
+
+#right-side {
+    float: inline-start;
+    padding-left: 20px;
+}
+
+.lbl {
+    display: inline-block;
+    margin: 10px;
+}
+
+.inp {
+    width: 250px;
+    display: block;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.inpAddress{
+    width: 250px;
+    height: 80;
+    display: block;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+/*     border: coral;
+    background-color: blue; */
+}
+
+.lblRegister{
+    text-decoration: underline;
+    margin-top:0.1px;
+    padding-left: 18px;
+}
+
+
+.chkPayment{
+    float: right;
+    margin-right: 100px;
+/*     padding-left: 100px;
+    margin-left: 100px; */
+ }
+/* .inp1{
+    
+    width: 250px;
+    height: 80;
+    display: block;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.inp2{
+    
+    width: 250px;
+    display: block;
+    float: right;
+    margin-top: 200px;
+    margin-bottom: 100px;
+} */
+
+.button-area {
+    /* margin: auto; */
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 30%;
+   /*  background-color: rgb(244, 235, 235); */
+    height: 5%;
+}
+
+.button-area > button {
+    display: inline-block;
+    margin-top: 5px;
+   /*  padding-top: 3px;
+    margin-bottom: 15px; */
+    
+}
+
+input[type=button], input[type=submit], input[type=reset]{
+    background-color: aquamarine;
+}
