@@ -1,0 +1,11 @@
+1.	How many callbacks queues in Node.js and what are they? Give examples to explain how different callbacks are enqueued in different queues.
+
+When a stack is empty, the following call backs are executed  in  event loop.
+
+(1)Timer – It works after process.nextTick and promises(Micro tasks) queue are done. 
+Example-setTimeOut() function 
+(2)I/O callback- Example -read file
+(3)Polling- Example - check a read file function that is completed or not. If it is done, it will back to I/O call back.
+(4)Check-  it execute after timer, I/O call back and polling 
+Example – setIntermediate() function
+(5)Close- it execute after all other queue call backs.
