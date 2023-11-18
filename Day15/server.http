@@ -1,0 +1,41 @@
+
+
+GET http://localhost:3000/books
+
+###
+
+GET http://localhost:3000/books/5
+
+###
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title":"Book6",
+    "isbn":"B006",
+    "publishedDate":"05/30/2001",
+    "author":"author6"
+}
+
+###
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+    "title": "book1",
+    "isbn": "B001",
+    "publishedDate": "07/16/2013",
+    "author":"author2"
+}
+
+
+
+###
+
+GET http://localhost:3000/books/5
+
+###
+
+DELETE http://localhost:3000/books/5
+
